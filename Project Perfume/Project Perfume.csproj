@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3357F948-2F53-416C-8381-A2816C2C7DAA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_Perfume</RootNamespace>
+    <AssemblyName>Project Perfume</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%24this.BackgroundImage.png" />
+    <Content Include="Resources\5d220cf87cce3-removebg-preview.png" />
+    <Content Include="Resources\625fec1dNb54e69c0.jpg_q70-removebg-preview.png" />
+    <Content Include="Resources\7f251b72cbff5acf690c055dec873792-removebg-preview.png" />
+    <Content Include="Resources\BURBERRY_Burberry_Hero_Edt-removebg-preview.png" />
+    <Content Include="Resources\BURBERRY_Her_London_Dream_Eau_de_Parfum-removebg-preview.png" />
+    <Content Include="Resources\Creed-Royal-Princess-Oud-75ml-edp-1-removebg-preview.png" />
+    <Content Include="Resources\creed-spring-flower-eau-de-parfum.9401-removebg-preview %281%29.png" />
+    <Content Include="Resources\DAVIDOFF_DFF_CHAMPION_EDT-removebg-preview.png" />
+    <Content Include="Resources\DAVIDOFF_DFF_COOL_WATER_M_08_EDT-removebg-preview.png" />
+    <Content Include="Resources\DAVIDOFF_Run_Wild_For_Him_Eau_de_Toilette-removebg-preview.png" />
+    <Content Include="Resources\download.jpg" />
+    <Content Include="Resources\GIVENCHY Gentleman 21 Edt Int.png" />
+    <Content Include="Resources\GIVENCHY_IRR_EDP-removebg-preview.png" />
+    <Content Include="Resources\GIVENCHY_L_Interdit_21_Edpr-removebg-preview.png" />
+    <Content Include="Resources\GIVENCHY_L_Interdit_Edition_Millesime-removebg-preview.png" />
+    <Content Include="Resources\LACOSTE_Match_Point-removebg-preview.png" />
+    <Content Include="Resources\LACOSTE_Pour_Femme_Intense-removebg-preview.png" />
+    <Content Include="Resources\Lacoste_Pour_Femme_Timeless-removebg-preview.png" />
+    <Content Include="Resources\Lacoste_Pour_Homme-removebg-preview.png" />
+    <Content Include="Resources\Model\1.1.jpg" />
+    <Content Include="Resources\Model\1.2.jpg" />
+    <Content Include="Resources\Model\1.3.jpg" />
+    <Content Include="Resources\Model\1.4.jpg" />
+    <Content Include="Resources\Model\1.jpg" />
+    <Content Include="Resources\Model\10.2.jpg" />
+    <Content Include="Resources\Model\10.3.jpg" />
+    <Content Include="Resources\Model\10.4.jpg" />
+    <Content Include="Resources\Model\10.jpg" />
+    <Content Include="Resources\Model\10.1.jpg" />
+    <Content Include="Resources\Model\11.1.jpg" />
+    <Content Include="Resources\Model\11.2.jpg" />
+    <Content Include="Resources\Model\11.3.jpg" />
+    <Content Include="Resources\Model\11.4.jpg" />
+    <Content Include="Resources\Model\11.jpg" />
+    <Content Include="Resources\Model\12.1.jpg" />
+    <Content Include="Resources\Model\12.2.jpg" />
+    <Content Include="Resources\Model\12.3.jpg" />
+    <Content Include="Resources\Model\12.4.jpg" />
+    <Content Include="Resources\Model\12.jpg" />
+    <Content Include="Resources\Model\13.1.jpg" />
+    <Content Include="Resources\Model\13.2.jpg" />
+    <Content Include="Resources\Model\13.3.jpg" />
+    <Content Include="Resources\Model\13.4.jpg" />
+    <Content Include="Resources\Model\13.jpg" />
+    <Content Include="Resources\Model\14.1.jpg" />
+    <Content Include="Resources\Model\14.2.jpg" />
+    <Content Include="Resources\Model\14.3.jpg" />
+    <Content Include="Resources\Model\14.4.jpg" />
+    <Content Include="Resources\Model\14.jpg" />
+    <Content Include="Resources\Model\15.1.jpg" />
+    <Content Include="Resources\Model\15.2.jpg" />
+    <Content Include="Resources\Model\15.3.jpg" />
+    <Content Include="Resources\Model\15.4.jpg" />
+    <Content Include="Resources\Model\15.jpg" />
+    <Content Include="Resources\Model\16.1.jpg" />
+    <Content Include="Resources\Model\16.2.jpg" />
+    <Content Include="Resources\Model\16.3.jpg" />
+    <Content Include="Resources\Model\16.4.jpg" />
+    <Content Include="Resources\Model\16.jpg" />
+    <Content Include="Resources\Model\17.1.jpg" />
+    <Content Include="Resources\Model\17.2.jpg" />
+    <Content Include="Resources\Model\17.3.jpg" />
+    <Content Include="Resources\Model\17.4.jpg" />
+    <Content Include="Resources\Model\17.jpg" />
+    <Content Include="Resources\Model\18.1.jpg" />
+    <Content Include="Resources\Model\18.2.jpg" />
+    <Content Include="Resources\Model\18.3.jpg" />
+    <Content Include="Resources\Model\18.4.jpg" />
+    <Content Include="Resources\Model\18.jpg" />
+    <Content Include="Resources\Model\19.1.jpg" />
+    <Content Include="Resources\Model\19.2.jpg" />
+    <Content Include="Resources\Model\19.3.jpg" />
+    <Content Include="Resources\Model\19.4.jpg" />
+    <Content Include="Resources\Model\19.jpg" />
+    <Content Include="Resources\Model\2..jpg" />
+    <Content Include="Resources\Model\2.1.jpg" />
+    <Content Include="Resources\Model\2.2.jpg" />
+    <Content Include="Resources\Model\2.3.jpg" />
+    <Content Include="Resources\Model\2.4.jpg" />
+    <Content Include="Resources\Model\20.1.jpg" />
+    <Content Include="Resources\Model\20.2.jpg" />
+    <Content Include="Resources\Model\20.3.jpg" />
+    <Content Include="Resources\Model\20.4.jpg" />
+    <Content Include="Resources\Model\20.jpg" />
+    <Content Include="Resources\Model\21.1.jpg" />
+    <Content Include="Resources\Model\21.2.jpg" />
+    <Content Include="Resources\Model\21.3.jpg" />
+    <Content Include="Resources\Model\21.4.jpg" />
+    <Content Include="Resources\Model\21.jpg" />
+    <Content Include="Resources\Model\22.1.jpg" />
+    <Content Include="Resources\Model\22.2.jpg" />
+    <Content Include="Resources\Model\22.3.jpg" />
+    <Content Include="Resources\Model\22.4.jpg" />
+    <Content Include="Resources\Model\22.jpg" />
+    <Content Include="Resources\Model\23.1.jpg" />
+    <Content Include="Resources\Model\23.2.jpg" />
+    <Content Include="Resources\Model\23.3.jpg" />
+    <Content Include="Resources\Model\23.4.jpg" />
+    <Content Include="Resources\Model\23.jpg" />
+    <Content Include="Resources\Model\24.1.jpg" />
+    <Content Include="Resources\Model\24.2.jpg" />
+    <Content Include="Resources\Model\24.3.jpg" />
+    <Content Include="Resources\Model\24.4.jpg" />
+    <Content Include="Resources\Model\24.jpg" />
+    <Content Include="Resources\Model\25.1.jpg" />
+    <Content Include="Resources\Model\25.2.jpg" />
+    <Content Include="Resources\Model\25.3.jpg" />
+    <Content Include="Resources\Model\25.4.jpg" />
+    <Content Include="Resources\Model\25.jpg" />
+    <Content Include="Resources\Model\26.1.jpg" />
+    <Content Include="Resources\Model\26.2.jpg" />
+    <Content Include="Resources\Model\26.3.jpg" />
+    <Content Include="Resources\Model\26.4.jpg" />
+    <Content Include="Resources\Model\26.jpg" />
+    <Content Include="Resources\Model\27.1.jpg" />
+    <Content Include="Resources\Model\27.2.jpg" />
+    <Content Include="Resources\Model\27.3.jpg" />
+    <Content Include="Resources\Model\27.4.jpg" />
+    <Content Include="Resources\Model\27.jpg" />
+    <Content Include="Resources\Model\28.1.jpg" />
+    <Content Include="Resources\Model\28.2.jpg" />
+    <Content Include="Resources\Model\28.3.jpg" />
+    <Content Include="Resources\Model\28.4.jpg" />
+    <Content Include="Resources\Model\28.jpg" />
+    <Content Include="Resources\Model\29.1.jpg" />
+    <Content Include="Resources\Model\29.2.jpg" />
+    <Content Include="Resources\Model\29.3.jpg" />
+    <Content Include="Resources\Model\29.4.jpg" />
+    <Content Include="Resources\Model\29.jpg" />
+    <Content Include="Resources\Model\3.1.jpg" />
+    <Content Include="Resources\Model\3.2.jpg" />
+    <Content Include="Resources\Model\3.3.jpg" />
+    <Content Include="Resources\Model\3.4.jpg" />
+    <Content Include="Resources\Model\3.jpg" />
+    <Content Include="Resources\Model\30.1.jpg" />
+    <Content Include="Resources\Model\30.2.jpg" />
+    <Content Include="Resources\Model\30.3.jpg" />
+    <Content Include="Resources\Model\30.4.jpg" />
+    <Content Include="Resources\Model\30.jpg" />
+    <Content Include="Resources\Model\31.1.jpg" />
+    <Content Include="Resources\Model\31.2.jpg" />
+    <Content Include="Resources\Model\31.3.jpg" />
+    <Content Include="Resources\Model\31.4.jpg" />
+    <Content Include="Resources\Model\31.jpg" />
+    <Content Include="Resources\Model\32.1.jpg" />
+    <Content Include="Resources\Model\32.2.jpg" />
+    <Content Include="Resources\Model\32.3.jpg" />
+    <Content Include="Resources\Model\32.4.jpg" />
+    <Content Include="Resources\Model\32.jpg" />
+    <Content Include="Resources\Model\33.1.jpg" />
+    <Content Include="Resources\Model\33.2.jpg" />
+    <Content Include="Resources\Model\33.3.jpg" />
+    <Content Include="Resources\Model\33.4.jpg" />
+    <Content Include="Resources\Model\33.jpg" />
+    <Content Include="Resources\Model\34.1.jpg" />
+    <Content Include="Resources\Model\34.2.jpg" />
+    <Content Include="Resources\Model\34.3.jpg" />
+    <Content Include="Resources\Model\34.4.jpg" />
+    <Content Include="Resources\Model\34.jpg" />
+    <Content Include="Resources\Model\35.1.jpg" />
+    <Content Include="Resources\Model\35.2.jpg" />
+    <Content Include="Resources\Model\35.3.jpg" />
+    <Content Include="Resources\Model\35.4.jpg" />
+    <Content Include="Resources\Model\35.jpg" />
+    <Content Include="Resources\Model\36.1.jpg" />
+    <Content Include="Resources\Model\36.2.jpg" />
+    <Content Include="Resources\Model\36.3.jpg" />
+    <Content Include="Resources\Model\36.4.jpg" />
+    <Content Include="Resources\Model\36.jpg" />
+    <Content Include="Resources\Model\37.1.jpg" />
+    <Content Include="Resources\Model\37.2.jpg" />
+    <Content Include="Resources\Model\37.3.jpg" />
+    <Content Include="Resources\Model\37.4.jpg" />
+    <Content Include="Resources\Model\37.jpg" />
+    <Content Include="Resources\Model\38.1.jpg" />
+    <Content Include="Resources\Model\38.2.jpg" />
+    <Content Include="Resources\Model\38.3.jpg" />
+    <Content Include="Resources\Model\38.4.jpg" />
+    <Content Include="Resources\Model\38.jpg" />
+    <Content Include="Resources\Model\39.1.jpg" />
+    <Content Include="Resources\Model\39.2.jpg" />
+    <Content Include="Resources\Model\39.3.jpg" />
+    <Content Include="Resources\Model\39.4.jpg" />
+    <Content Include="Resources\Model\39.jpg" />
+    <Content Include="Resources\Model\4.1.jpg" />
+    <Content Include="Resources\Model\4.2.jpg" />
+    <Content Include="Resources\Model\4.3.jpg" />
+    <Content Include="Resources\Model\4.4.jpg" />
+    <Content Include="Resources\Model\4.jpg" />
+    <Content Include="Resources\Model\40.1.jpg" />
+    <Content Include="Resources\Model\40.2.jpg" />
+    <Content Include="Resources\Model\40.3.jpg" />
+    <Content Include="Resources\Model\40.4.jpg" />
+    <Content Include="Resources\Model\40.jpg" />
+    <Content Include="Resources\Model\5.1.jpg" />
+    <Content Include="Resources\Model\5.2.jpg" />
+    <Content Include="Resources\Model\5.3.jpg" />
+    <Content Include="Resources\Model\5.4.jpg" />
+    <Content Include="Resources\Model\5.jpg" />
+    <Content Include="Resources\Model\6.1.jpg" />
+    <Content Include="Resources\Model\6.2.jpg" />
+    <Content Include="Resources\Model\6.3.jpg" />
+    <Content Include="Resources\Model\6.4.jpg" />
+    <Content Include="Resources\Model\6.jpg" />
+    <Content Include="Resources\Model\7.1.jpg" />
+    <Content Include="Resources\Model\7.2.jpg" />
+    <Content Include="Resources\Model\7.3.jpg" />
+    <Content Include="Resources\Model\7.4.jpg" />
+    <Content Include="Resources\Model\7.jpg" />
+    <Content Include="Resources\Model\8.1.jpg" />
+    <Content Include="Resources\Model\8.2.jpg" />
+    <Content Include="Resources\Model\8.3.jpg" />
+    <Content Include="Resources\Model\8.4.jpg" />
+    <Content Include="Resources\Model\8.jpg" />
+    <Content Include="Resources\Model\9.1.jpg" />
+    <Content Include="Resources\Model\9.2.jpg" />
+    <Content Include="Resources\Model\9.3.jpg" />
+    <Content Include="Resources\Model\9.4.jpg" />
+    <Content Include="Resources\Model\9.jpg" />
+    <Content Include="Resources\VERSACE Dylan Turquoise Eau De Toilette.jpg" />
+    <Content Include="Resources\VERSACE_Bright_Crystal_Absolu_EDP-removebg-preview.png" />
+    <Content Include="Resources\VERSACE_EROS_EDT_SP-removebg-preview.png" />
+    <Content Include="Resources\VERSACE_Man_Eau_Fraiche_EDT_NS-removebg-preview.png" />
+    <Content Include="Resources\VERSACE_VSC_PUR_HME_DYLAN_BLE_EDT-removebg-preview.png" />
+    <Content Include="Resources\VERSACE_Yellow_Diamond_EDT_Nat_Spray-removebg-preview.png" />
+    <Content Include="Resources\WhatsApp-Image-2021-12-14-at-4.30.07-PM-3-removebg-preview.png" />
+    <None Include="Resources\Thank YOU1.jpg" />
+    <Content Include="Resources\10.png" />
+    <Content Include="Resources\2.png" />
+    <Content Include="Resources\3-1980x1320.png" />
+    <Content Include="Resources\3.png" />
+    <Content Include="Resources\882548.jpg" />
+    <Content Include="Resources\989fa03cae8deca850e82378178c6c19-removebg-preview %281%29.png" />
+    <Content Include="Resources\CHANEL_CHANCE_EAU_TENDRE-removebg-preview.png" />
+    <Content Include="Resources\CHANEL_GABRIELLE_CHANEL-removebg-preview.png" />
+    <Content Include="Resources\COCO_MADEMOISELLE-removebg-preview.png" />
+    <Content Include="Resources\CREED-AVENTUS-EDP-FOR-MEN-removebg-preview.png" />
+    <Content Include="Resources\DIOR_Fahrenheit_Eau_de_toilette-removebg-preview.png" />
+    <Content Include="Resources\DIOR_Homme_Sport_Eau_de_Toilette-removebg-preview.png" />
+    <Content Include="Resources\DIOR_Sauvage_Eau_de_Toilette-removebg-preview.png" />
+    <Content Include="Resources\DIOR__J_adore_Eau_de_parfum_infinissime-removebg-preview.png" />
+    <Content Include="Resources\DIOR__Miss_Dior_Blooming_Bouquet-removebg-preview.png" />
+    <Content Include="Resources\Flora Gorgeous Gardenia Eau De Parfum.jpg" />
+    <Content Include="Resources\Flora_Gorgeous_Gardenia_Eau_De_Parfum-removebg-preview.png" />
+    <Content Include="Resources\GUCCI EDP MEMOIRE ODEUR.jpg" />
+    <Content Include="Resources\Gucci Gucci Huayue Blooming Red Flower EDP.jpg" />
+    <Content Include="Resources\Gucci Guilty Absolute.jpg" />
+    <Content Include="Resources\GUCCI GUILTY PH EDP..jpg" />
+    <Content Include="Resources\GUCCI GUILTY PH EDP.jpg" />
+    <Content Include="Resources\GUCCI Guilty Pour Femme.jpg" />
+    <Content Include="Resources\GUCCI_EDP_MEMOIRE_ODEUR-removebg-preview.png" />
+    <Content Include="Resources\Gucci_Gucci_Huayue_Blooming_Red_Flower_EDP-removebg-preview.png" />
+    <Content Include="Resources\Gucci_Guilty_Absolute-removebg-preview.png" />
+    <Content Include="Resources\GUCCI_GUILTY_PH_EDP.-removebg-preview.png" />
+    <Content Include="Resources\GUCCI_Guilty_Pour_Femme-removebg-preview.png" />
+    <Content Include="Resources\N_5_L_EAU_Red_Limited_Edition-removebg-preview.png" />
+    <Content Include="Resources\N_5__EAU_DE_PARFUM_SPRAY-removebg-preview.png" />
+    <Content Include="Resources\Thank YOU.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
